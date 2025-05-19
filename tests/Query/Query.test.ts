@@ -20,6 +20,7 @@ import { createTasksFromMarkdown, fromLine } from '../TestingTools/TestHelpers';
 import type { FilteringCase } from '../TestingTools/FilterTestHelpers';
 import { shouldSupportFiltering } from '../TestingTools/FilterTestHelpers';
 import { TaskBuilder } from '../TestingTools/TaskBuilder';
+import { Duration } from '../../src/Task/Duration';
 import { Priority } from '../../src/Task/Priority';
 import { TaskLayoutComponent } from '../../src/Layout/TaskLayoutOptions';
 import query_using_properties from '../Obsidian/__test_data__/query_using_properties.json';
@@ -988,6 +989,7 @@ describe('Query', () => {
                     indentation: '',
                     listMarker: '-',
                     priority: Priority.None,
+                    duration: Duration.None,
                     startDate: null,
                     scheduledDate: null,
                     dueDate: null,
@@ -1010,6 +1012,7 @@ describe('Query', () => {
                     indentation: '',
                     listMarker: '-',
                     priority: Priority.None,
+                    duration: Duration.None,
                     startDate: null,
                     scheduledDate: null,
                     dueDate: null,
